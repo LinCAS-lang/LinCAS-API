@@ -1,5 +1,4 @@
 # Class: String
----
 A string is a sequence of UTF-8 characters enclosed 
 betweend double quotes.
 
@@ -17,10 +16,10 @@ like `String#[]=`
 String.cr
 
 ---
-## Index:
-  * [#+()](#subparagraph1)
-  * [#concat()](#subparagraph2)
-  * [#init()](#initstring---new_string)
+##Index:
+  * [#+()](### str + other_str -> new_str)
+  * [#concat()](### concat(str1,str2,str3...) -> str)
+  * [#init()](### init(string) -> new_string)
 ---
 ### str + other_str -> new_str
 
