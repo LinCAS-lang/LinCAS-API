@@ -286,6 +286,7 @@ Converts a string into a float number
 "12.24".to_f()  #=> 12.24
 "12.ab".to_f()  #=> 12.0
 "abcd".to_f()   #=> 0.0
+```
 
 [see definition](https://github.com/LinCAS-lang/LinCAS/blob/master/src/Internal/String.cr#L801)
 
@@ -297,6 +298,7 @@ Warning: no overflow is checked yet
 "12".to_i()   #=> 12
 "12x".to_i()  #=> 12
 "abcd".to_i() #=> 0
+```
 
 [see definition](https://github.com/LinCAS-lang/LinCAS/blob/master/src/Internal/String.cr#L783)
 
