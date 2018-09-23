@@ -20,7 +20,7 @@ String.cr
 ## Index:
   * [#+()](#subparagraph1)
   * [#concat()](#subparagraph2)
-  * [#init()](#init(string)-->-new_string)
+  * [#init()](#initstring---new_string)
 ---
 ### str + other_str -> new_str
 
