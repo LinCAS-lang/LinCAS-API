@@ -16,7 +16,7 @@ String.cr
 
 ---
 ## Index:
-  * [#*](#str--integer---new_string)
+  * [#*](#str-integer-greater-than-new_string)
   * [#+](#str--other_str---new_str)
   * [#==](#str-==-other---boolean)
   * [#[]](#str[index]---string-or-null)
