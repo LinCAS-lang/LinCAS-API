@@ -18,9 +18,9 @@ String.cr
 
 ---
 ## Index:
-  * [#+()](#paragraph1)
-  * [#concat()](#paragraph2)
-  * [#init()](#paragraph3)
+  * [#+()](#subparagraph1)
+  * [#concat()](#subparagraph2)
+  * [#init()](#subparagraph3)
 ---
 ### str + other_str -> new_str
 
