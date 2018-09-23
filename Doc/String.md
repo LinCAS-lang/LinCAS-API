@@ -17,7 +17,7 @@ like `String#[]=`
 String.cr
 
 ---
-##Index:
+## Index:
   * [#+()](### str + other_str -> new_str)
   * [#concat()](### concat(str1,str2,str3...) -> str)
   * [#init()](### init(string) -> new_string)
