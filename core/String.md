@@ -46,7 +46,7 @@ String.cr
 ### str * integer -> new_string
 
 Performs a multiplication between a string and a number
-```CoffeeScript
+```coffee
 bark   := "Bark"
 bark_3 := bark * 3 #=> "BarkBarkBark"
 ```
@@ -58,7 +58,7 @@ bark_3 := bark * 3 #=> "BarkBarkBark"
 
 Adds two strings.
 This method can be invoked in two ways:
-```CoffeeScript
+```coffee
 foo    := "Foo"
 bar    := "Bar"
 foobar := foo + bar #=> "FooBar"
@@ -69,7 +69,7 @@ foobar := foo + bar #=> "FooBar"
 ### str == other -> boolean
 
 Compares two strings or a string with another object
-```CoffeeScript
+```coffee
 bar := "Bar"
 foo := "Foo"
 bar == bar #=> true
@@ -83,7 +83,7 @@ bar == 2   #=> false
 ### str[range] -> string 
 
 Access the string characters at the given index
-```CoffeeScript
+```coffee
 str := "A quite long string"
 str[0]    #=> "A"
 str[8]    #=> "l"
@@ -95,7 +95,7 @@ str[2..6] #=> "quite"
 ### str[index] = string -> str
 
 Sets a char or a set of chars in a specified index
-```CoffeeScript
+```coffee
 a    := "Gun"
 a[0] := "F"    #=> "Fun"
 a[2] := "fair" #=> "Funfair"
@@ -107,7 +107,7 @@ a[8] := "!"    #=> Raises an error
 ### chars() -> array 
 
 Returns an array containing each char of the string
-```CoffeeScript
+```coffee
 "abc".chars() #=> ["a","b","c"]
 ```
 
@@ -116,7 +116,7 @@ Returns an array containing each char of the string
 ### clone() -> new_str
 
 Clones a string
-```CoffeeScript
+```coffee
 a := "Foo"
 b := a         # b and a are pointing to the same object
 # Now b and c are going to point to two different objects
@@ -129,7 +129,7 @@ c := a.clone() #=> "Foo"
 
 Clones the string and deletes the spaces on this last
 one
-```CoffeeScript
+```coffee
 "Compacting This String".compact() #=> "CompactingThisString"
 ```
 
@@ -138,7 +138,7 @@ one
 ### compact!() -> str
 
 Deletes the spaces of str
-```CoffeeScript
+```coffee
 "Compacting This String".compact!() #=> "CompactingThisString"
 ```
 
@@ -147,7 +147,7 @@ Deletes the spaces of str
 ### concat(str1,str2,str3...) -> str
 
 Concatenates other strings at the given one
-```CoffeeScript
+```coffee
 a := "1"
 a.concat("2")     #=> "12"
 a.concat("3","4") #=> "1234"
@@ -158,7 +158,7 @@ a.concat("3","4") #=> "1234"
 ### each(&block) -> str
 
 Iterates over each char of the string
-```CoffeeScript
+```coffee
 "abcd".each_char() { (chr)
 print "Char: ",chr
 printl
@@ -176,7 +176,7 @@ printl
 
 Returns a new string where every occurrence 
 of `pattern` replaced with the content in `replacement`
-```CoffeeScript
+```coffee
 "comfort".gsub("o","*")    #=> c*mf*rt
 "comfort".gsub("com","ef") #=> effort
 ```
@@ -193,7 +193,7 @@ Return string hash based on length and content
 
 Checks if a substring is contained in another one.
 It works making a call like this:
-```CoffeeScript
+```coffee
 str := "A cat on the roof"
 cat := "Cat"
 str.include(cat)   #=> true
@@ -207,7 +207,7 @@ str.include("bed") #=> false
 
 Initializes a new string through the keyword 'new' or just
 assigning it. This is the 'init' method of the class
-```CoffeeScript
+```coffee
 str := "Foo"             #=> Foo
 str := new String("Foo") #=> Foo
 ```
@@ -217,7 +217,7 @@ str := new String("Foo") #=> Foo
 ### insert(index,string) -> str
 
 Inserts a second string in the current one
-```CoffeeScript
+```coffee
 a := "0234"
 a.insert(1,"1") #=> "01234"
 a.insert(5,"5") #=> "012345"
@@ -230,7 +230,7 @@ a.insert(7,"6") #=> Raises an error
 
 Performs the downcase on the whole string 
 without overwriting the original one
-```CoffeeScript
+```coffee
 "FOO.lowcase() #=> "foo"
 ```
 
@@ -239,7 +239,7 @@ without overwriting the original one
 ### lowcase!() -> str
 
 Performs the downcase on the whole string overwriting the original one
-```CoffeeScript
+```coffee
 "FOO.lowcase!() #=> "foo"
 ```
 
@@ -249,7 +249,7 @@ Performs the downcase on the whole string overwriting the original one
 ### length() -> integer [alias]
 
 Returns the string size
-```CoffeeScript
+```coffee
 a := "Hello, world"
 a.size() #=> 12
 ```
@@ -260,7 +260,7 @@ a.size() #=> 12
 
 Splits a string according to a specific delimiter, returning an array.
 If `delimiter` is not specified, a white space will be used
-```CoffeeScript
+```coffee
 a := "a,b,c,d"
 a.split(",") #=> ["a","b","c","d"]
 ```
@@ -271,7 +271,7 @@ a.split(",") #=> ["a","b","c","d"]
 
 Returns true if the beginning of `str` matches `str_beg`, 
 false in all the other cases
-```CoffeScript
+```coffee
 "hola".starts_with? ("h")  #=> true
 "hola".statrs_with? ("ho") #=> true
 ```
@@ -281,7 +281,7 @@ false in all the other cases
 ### to_f() -> float
 
 Converts a string into a float number
-```CoffeeScript
+```coffee
 "12".to_f()     #=> 12.0
 "12.24".to_f()  #=> 12.24
 "12.ab".to_f()  #=> 12.0
@@ -293,7 +293,7 @@ Converts a string into a float number
 
 Converts a string into an integer number.
 Warning: no overflow is checked yet
-```CoffeeScript
+```coffee
 "12".to_i()   #=> 12
 "12x".to_i()  #=> 12
 "abcd".to_i() #=> 0
@@ -303,7 +303,7 @@ Warning: no overflow is checked yet
 ### to_sym() -> symbol
 
 Converts `str` into a symbol
-```CoffeeScript
+```coffee
 "foo".to_sym() #=> :foo
 "32".to_sym()  #=> :"32"
 ```
@@ -314,7 +314,7 @@ Converts `str` into a symbol
 
 Performs the upcase on the whole string 
 without overwriting the original one
-```CoffeeScript
+```coffee
 "foo".upcase() #=> "FOO"
 ```
 
@@ -323,7 +323,7 @@ without overwriting the original one
 ### upcase!() -> str
 
 Performs the upcase on the whole string overwriting the original one
-```CoffeeScript
+```coffee
 "foo".upcase!() #=> "FOO"
 ```
 
