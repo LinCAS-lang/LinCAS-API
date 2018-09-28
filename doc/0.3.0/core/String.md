@@ -16,32 +16,32 @@ String.cr
 
 ---
 ## Index:
-  * [#*](#str-integer-greater-than-new_string)
-  * [#+](#str-other_str-greater-than-new_str)
-  * [#==](#str-other-greater-than-boolean)
-  * [#[]](#str-index-greater-than-string-or-null)
-  * [#[]=](#str-index-string-greater-than-str)
-  * [#chars](#chars-greater-than-array)
-  * [#clone](#clone-greater-than-new_str)
-  * [#compact](#compact-greater-than-new_str)
-  * [#compact!](#compact-greater-than-str)
-  * [#concat](#concat-str-1-str-2-str-3-greater-than-str)
-  * [#each ](#each-block-greater-than-str)
-  * [#gsub](#gsub-pattern-replacement-greater-than-new_str)
-  * [#hash](#hash-greater-than-integer)
-  * [#include?](#include-string-greater-than-boolean)
-  * [#init](#init-string-greater-than-new_string)
-  * [#insert](#insert-index-string-greater-than-str)
-  * [#lowcase](#lowcase-greater-than-new_string)
-  * [#lowcase!](#lowcase-greater-than-str)
-  * [#size](#size-greater-than-integer)
-  * [#split](#split-delimiter-greater-than-array)
-  * [#starts_with?](#starts_with-str_beg-greater-than-boolean)
-  * [#to_f](#to_f-greater-than-float)
-  * [#to_i](#to_i-greater-than-integer)
-  * [#to_sym](#to_sym-greater-than-symbol)
-  * [#upcase](#upcase-greater-than-new_string)
-  * [#upcase!](#upcase-greater-than-str)
+  * [#*](#str--integer--new_string)
+  * [#+](#str--other_str--new_str)
+  * [#==](#str--other--boolean)
+  * [#[]](#strindex--string-or-null)
+  * [#[]=](#strindex--string--str)
+  * [#chars](#chars--array-)
+  * [#clone](#clone--new_str)
+  * [#compact](#compact--new_str)
+  * [#compact!](#compact--str)
+  * [#concat](#concatstr1str2str3--str)
+  * [#each ](#each&block--str)
+  * [#gsub](#gsubpatternreplacement--new_str)
+  * [#hash](#hash--integer)
+  * [#include?](#includestring--boolean)
+  * [#init](#initstring--new_string)
+  * [#insert](#insertindexstring--str)
+  * [#lowcase](#lowcase--new_string)
+  * [#lowcase!](#lowcase--str)
+  * [#size](#size--integer)
+  * [#split](#splitdelimiter--"-"--array)
+  * [#starts_with?](#starts_withstr_beg--boolean)
+  * [#to_f](#to_f--float)
+  * [#to_i](#to_i--integer)
+  * [#to_sym](#to_sym--symbol)
+  * [#upcase](#upcase--new_string)
+  * [#upcase!](#upcase--str)
 ---
 ### str * integer -> new_string
 
@@ -111,7 +111,7 @@ Returns an array containing each char of the string
 "abc".chars() #=> ["a","b","c"]
 ```
 
-[see definition](https://github.com/LinCAS-lang/LinCAS/blob/master/src/Internal/String.cr#L847)
+[see definition](https://github.com/LinCAS-lang/LinCAS/blob/master/src/Internal/String.cr#L849)
 
 ### clone() -> new_str
 
@@ -133,7 +133,7 @@ one
 "Compacting This String".compact() #=> "CompactingThisString"
 ```
 
-[see definition](https://github.com/LinCAS-lang/LinCAS/blob/master/src/Internal/String.cr#L870)
+[see definition](https://github.com/LinCAS-lang/LinCAS/blob/master/src/Internal/String.cr#L872)
 
 ### compact!() -> str
 
@@ -142,7 +142,7 @@ Deletes the spaces of str
 "Compacting This String".compact!() #=> "CompactingThisString"
 ```
 
-[see definition](https://github.com/LinCAS-lang/LinCAS/blob/master/src/Internal/String.cr#L900)
+[see definition](https://github.com/LinCAS-lang/LinCAS/blob/master/src/Internal/String.cr#L902)
 
 ### concat(str1,str2,str3...) -> str
 
@@ -170,7 +170,7 @@ printl
 #=> Char: d
 ```
 
-[see definition](https://github.com/LinCAS-lang/LinCAS/blob/master/src/Internal/String.cr#L825)
+[see definition](https://github.com/LinCAS-lang/LinCAS/blob/master/src/Internal/String.cr#L827)
 
 ### gsub(pattern,replacement) -> new_str
 
@@ -181,13 +181,13 @@ of `pattern` replaced with the content in `replacement`
 "comfort".gsub("com","ef") #=> effort
 ```
 
-[see definition](https://github.com/LinCAS-lang/LinCAS/blob/master/src/Internal/String.cr#L967)
+[see definition](https://github.com/LinCAS-lang/LinCAS/blob/master/src/Internal/String.cr#L969)
 
 ### hash() -> integer
 
 Return string hash based on length and content
 
-[see definition](https://github.com/LinCAS-lang/LinCAS/blob/master/src/Internal/String.cr#L1068)
+[see definition](https://github.com/LinCAS-lang/LinCAS/blob/master/src/Internal/String.cr#L1070)
 
 ### include?(string) -> boolean
 
@@ -276,7 +276,7 @@ false in all the other cases
 "hola".statrs_with? ("ho") #=> true
 ```
 
-[see definition](https://github.com/LinCAS-lang/LinCAS/blob/master/src/Internal/String.cr#L1004)
+[see definition](https://github.com/LinCAS-lang/LinCAS/blob/master/src/Internal/String.cr#L1006)
 
 ### to_f() -> float
 
@@ -288,7 +288,7 @@ Converts a string into a float number
 "abcd".to_f()   #=> 0.0
 ```
 
-[see definition](https://github.com/LinCAS-lang/LinCAS/blob/master/src/Internal/String.cr#L801)
+[see definition](https://github.com/LinCAS-lang/LinCAS/blob/master/src/Internal/String.cr#L803)
 
 ### to_i() -> integer
 
@@ -300,7 +300,7 @@ Warning: no overflow is checked yet
 "abcd".to_i() #=> 0
 ```
 
-[see definition](https://github.com/LinCAS-lang/LinCAS/blob/master/src/Internal/String.cr#L783)
+[see definition](https://github.com/LinCAS-lang/LinCAS/blob/master/src/Internal/String.cr#L784)
 
 ### to_sym() -> symbol
 
@@ -310,7 +310,7 @@ Converts `str` into a symbol
 "32".to_sym()  #=> :"32"
 ```
 
-[see definition](https://github.com/LinCAS-lang/LinCAS/blob/master/src/Internal/String.cr#L1045)
+[see definition](https://github.com/LinCAS-lang/LinCAS/blob/master/src/Internal/String.cr#L1047)
 
 ### upcase() -> new_string
 
