@@ -53,6 +53,7 @@ bark_3 := bark * 3 #=> "BarkBarkBark"
 ```
 
 [see definition](https://github.com/LinCAS-lang/LinCAS/blob/master/src/Internal/String.cr#L368)
+
 ---
 
 ### str + other_str -> new_str
@@ -67,6 +68,7 @@ foobar := foo + bar #=> "FooBar"
 ```
 
 [see definition](https://github.com/LinCAS-lang/LinCAS/blob/master/src/Internal/String.cr#L309)
+
 ---
 
 ### str == other -> boolean
@@ -81,6 +83,7 @@ bar == 2   #=> false
 ```
 
 [see definition](https://github.com/LinCAS-lang/LinCAS/blob/master/src/Internal/String.cr#L428)
+
 ---
 
 ### str[index] -> string or null
@@ -95,6 +98,7 @@ str[2..6] #=> "quite"
 ```
 
 [see definition](https://github.com/LinCAS-lang/LinCAS/blob/master/src/Internal/String.cr#L510)
+
 ---
 
 ### str[index] = string -> str
@@ -108,6 +112,7 @@ a[8] := "!"    #=> Raises an error
 ```
 
 [see definition](https://github.com/LinCAS-lang/LinCAS/blob/master/src/Internal/String.cr#L584)
+
 ---
 
 ### chars() -> array 
@@ -118,6 +123,7 @@ Returns an array containing each char of the string
 ```
 
 [see definition](https://github.com/LinCAS-lang/LinCAS/blob/master/src/Internal/String.cr#L849)
+
 ---
 
 ### clone() -> new_str
@@ -131,6 +137,7 @@ c := a.clone() #=> "Foo"
 ```
 
 [see definition](https://github.com/LinCAS-lang/LinCAS/blob/master/src/Internal/String.cr#L469)
+
 ---
 
 ### compact() -> new_str
@@ -142,6 +149,7 @@ one
 ```
 
 [see definition](https://github.com/LinCAS-lang/LinCAS/blob/master/src/Internal/String.cr#L872)
+
 ---
 
 ### compact!() -> str
@@ -152,6 +160,7 @@ Deletes the spaces of str
 ```
 
 [see definition](https://github.com/LinCAS-lang/LinCAS/blob/master/src/Internal/String.cr#L902)
+
 ---
 
 ### concat(str1,str2,str3...) -> str
@@ -164,6 +173,7 @@ a.concat("3","4") #=> "1234"
 ```
 
 [see definition](https://github.com/LinCAS-lang/LinCAS/blob/master/src/Internal/String.cr#L338)
+
 ---
 
 ### each(&block) -> str
@@ -182,6 +192,7 @@ printl
 ```
 
 [see definition](https://github.com/LinCAS-lang/LinCAS/blob/master/src/Internal/String.cr#L827)
+
 ---
 
 ### gsub(pattern,replacement) -> new_str
@@ -194,6 +205,7 @@ of `pattern` replaced with the content in `replacement`
 ```
 
 [see definition](https://github.com/LinCAS-lang/LinCAS/blob/master/src/Internal/String.cr#L969)
+
 ---
 
 ### hash() -> integer
@@ -201,6 +213,7 @@ of `pattern` replaced with the content in `replacement`
 Return string hash based on length and content
 
 [see definition](https://github.com/LinCAS-lang/LinCAS/blob/master/src/Internal/String.cr#L1070)
+
 ---
 
 ### include?(string) -> boolean
@@ -215,6 +228,7 @@ str.include("bed") #=> false
 ```
 
 [see definition](https://github.com/LinCAS-lang/LinCAS/blob/master/src/Internal/String.cr#L400)
+
 ---
 
 ### init(string) -> new_string
@@ -228,6 +242,7 @@ str := new String("Foo") #=> Foo
 ```
 
 [see definition](https://github.com/LinCAS-lang/LinCAS/blob/master/src/Internal/String.cr#L277)
+
 ---
 
 ### insert(index,string) -> str
@@ -241,6 +256,7 @@ a.insert(7,"6") #=> Raises an error
 ```
 
 [see definition](https://github.com/LinCAS-lang/LinCAS/blob/master/src/Internal/String.cr#L548)
+
 ---
 
 ### lowcase() -> new_string
@@ -252,6 +268,7 @@ without overwriting the original one
 ```
 
 [see definition](https://github.com/LinCAS-lang/LinCAS/blob/master/src/Internal/String.cr#L703)
+
 ---
 
 ### lowcase!() -> str
@@ -262,6 +279,7 @@ Performs the downcase on the whole string overwriting the original one
 ```
 
 [see definition](https://github.com/LinCAS-lang/LinCAS/blob/master/src/Internal/String.cr#L680)
+
 ---
 
 ### size() -> integer
@@ -274,6 +292,7 @@ a.size() #=> 12
 ```
 
 [see definition](https://github.com/LinCAS-lang/LinCAS/blob/master/src/Internal/String.cr#L619)
+
 ---
 
 ### split(delimiter := " ") -> array
@@ -286,6 +305,7 @@ a.split(",") #=> ["a","b","c","d"]
 ```
 
 [see definition](https://github.com/LinCAS-lang/LinCAS/blob/master/src/Internal/String.cr#L730)
+
 ---
 
 ### starts_with?(str_beg) -> boolean
@@ -298,6 +318,7 @@ false in all the other cases
 ```
 
 [see definition](https://github.com/LinCAS-lang/LinCAS/blob/master/src/Internal/String.cr#L1006)
+
 ---
 
 ### to_f() -> float
@@ -311,6 +332,7 @@ Converts a string into a float number
 ```
 
 [see definition](https://github.com/LinCAS-lang/LinCAS/blob/master/src/Internal/String.cr#L803)
+
 ---
 
 ### to_i() -> integer
@@ -324,6 +346,7 @@ Warning: no overflow is checked yet
 ```
 
 [see definition](https://github.com/LinCAS-lang/LinCAS/blob/master/src/Internal/String.cr#L784)
+
 ---
 
 ### to_sym() -> symbol
@@ -335,6 +358,7 @@ Converts `str` into a symbol
 ```
 
 [see definition](https://github.com/LinCAS-lang/LinCAS/blob/master/src/Internal/String.cr#L1047)
+
 ---
 
 ### upcase() -> new_string
@@ -346,6 +370,7 @@ without overwriting the original one
 ```
 
 [see definition](https://github.com/LinCAS-lang/LinCAS/blob/master/src/Internal/String.cr#L658)
+
 ---
 
 ### upcase!() -> str
@@ -356,5 +381,6 @@ Performs the upcase on the whole string overwriting the original one
 ```
 
 [see definition](https://github.com/LinCAS-lang/LinCAS/blob/master/src/Internal/String.cr#L635)
+
 ---
 

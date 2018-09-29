@@ -48,6 +48,7 @@ m1 * m3 #=> MathError: Incompatible matrices for product
 ```
 
 [see definition](https://github.com/LinCAS-lang/LinCAS/blob/master/src/Internal/Matrix.cr#L469)
+
 ---
 
 ### m + other_matrix -> new_matrix
@@ -69,6 +70,7 @@ m1 + m3 #=> MathError: Incompatible matrices for sum
 ```
 
 [see definition](https://github.com/LinCAS-lang/LinCAS/blob/master/src/Internal/Matrix.cr#L379)
+
 ---
 
 ### m - other_matrix -> new_matrix
@@ -90,6 +92,7 @@ m1 - m3 #=> MathError: Incompatible matrices for difference
 ```
 
 [see definition](https://github.com/LinCAS-lang/LinCAS/blob/master/src/Internal/Matrix.cr#L423)
+
 ---
 
 ### m[rows,cols]             -> object
@@ -114,6 +117,7 @@ m[1..2,1..2]
 ```
 
 [see definition](https://github.com/LinCAS-lang/LinCAS/blob/master/src/Internal/Matrix.cr#L269)
+
 ---
 
 ### m[row,col] := object
@@ -131,6 +135,7 @@ m[2,3] := 9 #=> IndexError: (Index [2,3] out of matrix)
 ```
 
 [see definition](https://github.com/LinCAS-lang/LinCAS/blob/master/src/Internal/Matrix.cr#L344)
+
 ---
 
 ### m.each(&block) -> m
@@ -148,6 +153,7 @@ m.each() { (v) printl v }
 ```
 
 [see definition](https://github.com/LinCAS-lang/LinCAS/blob/master/src/Internal/Matrix.cr#L566)
+
 ---
 
 ### init(rows,cols)        -> matrix
@@ -167,6 +173,7 @@ new Matrix(2,2) { (i,j) i + j * 2}
 ```
 
 [see definition](https://github.com/LinCAS-lang/LinCAS/blob/master/src/Internal/Matrix.cr#L151)
+
 ---
 
 ### to_s() -> string
@@ -181,6 +188,7 @@ a.to_s()
 ```
 
 [see definition](https://github.com/LinCAS-lang/LinCAS/blob/master/src/Internal/Matrix.cr#L206)
+
 ---
 
 ### m.tr() -> new_matrix
@@ -194,5 +202,6 @@ m2.tr()
 ```
 
 [see definition](https://github.com/LinCAS-lang/LinCAS/blob/master/src/Internal/Matrix.cr#L536)
+
 ---
 
